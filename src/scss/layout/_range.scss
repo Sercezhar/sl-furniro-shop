@@ -1,0 +1,31 @@
+.range-section {
+  margin: 56px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-bottom: 62px;
+    font-size: 20px;
+  }
+}
+
+.range-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+  &__image {
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
