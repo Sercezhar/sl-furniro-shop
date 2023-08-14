@@ -1,0 +1,57 @@
+.overlay {
+  max-width: 100%;
+  height: 717px;
+  background-image: url("/images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+
+  &__content {
+    margin: auto 58px 117px auto;
+    padding: 62px 43px 37px 39px;
+    width: fit-content;
+    background-color: #fff3e3;
+    border-radius: 10px;
+  }
+
+  &__pretitle {
+    margin-bottom: 4px;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+    width: 399px;
+    color: $primaryColor;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  &__text {
+    margin-bottom: 46px;
+    width: 526px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.23;
+  }
+
+  &__button {
+    width: 222px;
+    height: 74px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $primaryColor;
+    transition: 300ms opacity $transitionBase;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
