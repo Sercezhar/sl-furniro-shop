@@ -1,0 +1,112 @@
+.footer {
+  margin-top: auto;
+  color: #000;
+  background-color: #fff;
+
+  &__title {
+    margin-bottom: 58px;
+    color: $footerTitleColor;
+    font-weight: 500;
+  }
+
+  &,
+  &__copyright {
+    border-top: 1px solid #d9d9d9;
+  }
+
+  &__copyright {
+    padding: 35px 0 38px 0;
+  }
+}
+
+/* ========== [CONTENT] ========== */
+.footer-content {
+  display: flex;
+  padding: 48px 0;
+}
+
+// contact
+.footer-contact {
+  margin-right: 136px;
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 50px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__address {
+    color: #9f9f9f;
+    font-style: normal;
+  }
+}
+
+// links
+.footer-links {
+  margin-right: 144px;
+}
+
+// help
+.footer-help {
+  margin-right: 72px;
+}
+
+// list
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+
+  &__link {
+    color: #000;
+    font-weight: 500;
+    transition: 300ms color $transitionBase;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+// newsletter
+.footer-newsletter {
+  display: flex;
+  gap: 11px;
+  min-height: 24px;
+  font-size: 14px;
+
+  &__input,
+  &__button {
+    min-height: 100%;
+    background-color: #fff;
+    transition: 300ms $transitionBase;
+    transition-property: color, border-color;
+  }
+
+  &__input {
+    width: 200px;
+    border-bottom: 1px solid #000;
+    outline: none;
+
+    &:focus {
+      border-color: $primaryColor;
+    }
+
+    &::placeholder {
+      color: #9f9f9f;
+    }
+  }
+
+  &__button {
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+
+    &:hover {
+      color: $primaryColor;
+      border-color: $primaryColor;
+    }
+  }
+}
