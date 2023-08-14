@@ -1,0 +1,29 @@
+.counter-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.counter {
+  padding: 20px;
+  color: $primaryColor;
+  background-color: #eee;
+  border-radius: 5px;
+
+  &__number {
+    margin-bottom: 20px;
+    width: 250px;
+    font-size: 68px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
