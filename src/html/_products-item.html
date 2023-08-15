@@ -1,0 +1,55 @@
+<li class="products-list__item">
+  <img class="products-list__image" src="@@image" alt="@@description" />
+
+  <div class="products-info">
+    <h3 class="products-info__title">@@title</h3>
+    <p class="products-info__description">@@description</p>
+    <div class="prices">
+      @@if (context.discount) {
+      <p class="prices__discounted"></p>
+      }
+      <p
+        class="prices__basic @@if (context.discount) {prices__basic--discounted}"
+      >
+        @@price
+      </p>
+    </div>
+
+    @@if (context.discount) {<span class="products-info__discount"
+      >@@discount</span
+    >} @@if (context.isNew) {<span class="products-info__new">New</span>}
+  </div>
+
+  <div class="products-item-overlay">
+    <button class="products-item-overlay__button" type="button">
+      Add to cart
+    </button>
+
+    <ul class="products-item-overlay__actions">
+      <li>
+        <button class="products-item-overlay__actions-button" type="button">
+          <svg class="products-item-overlay__actions-icon">
+            <use href="/images/icons.svg#icon-share"></use>
+          </svg>
+          Share
+        </button>
+      </li>
+      <li>
+        <button class="products-item-overlay__actions-button" type="button">
+          <svg class="products-item-overlay__actions-icon">
+            <use href="/images/icons.svg#icon-compare"></use>
+          </svg>
+          Compare
+        </button>
+      </li>
+      <li>
+        <button class="products-item-overlay__actions-button" type="button">
+          <svg class="products-item-overlay__actions-icon">
+            <use href="/images/icons.svg#icon-like"></use>
+          </svg>
+          Like
+        </button>
+      </li>
+    </ul>
+  </div>
+</li>

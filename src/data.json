@@ -1,0 +1,66 @@
+[
+  {
+    "image": "/images/section-products/product-1.jpg",
+    "title": "Slytherin",
+    "description": "Stylish cafe chair",
+    "price": "2.500.000",
+    "discount": 30,
+    "isNew": false
+  },
+  {
+    "image": "/images/section-products/product-2.jpg",
+    "title": "Leviosa",
+    "description": "Stylish cafe chair",
+    "price": "2.500.000",
+    "discount": null,
+    "isNew": false
+  },
+  {
+    "image": "/images/section-products/product-3.jpg",
+    "title": "Anadarko",
+    "description": "Luxury big sofa",
+    "price": "1.000.000",
+    "discount": 50,
+    "isNew": false
+  },
+  {
+    "image": "/images/section-products/product-4.jpg",
+    "title": "Respira",
+    "description": "Outdoor bar table and stool",
+    "price": "500.000",
+    "discount": null,
+    "isNew": true
+  },
+  {
+    "image": "/images/section-products/product-5.jpg",
+    "title": "Grifo",
+    "description": "Night lamp",
+    "price": "1.500.000",
+    "discount": null,
+    "isNew": false
+  },
+  {
+    "image": "/images/section-products/product-6.jpg",
+    "title": "Muggo",
+    "description": "Small mug",
+    "price": "1.100.000",
+    "discount": null,
+    "isNew": true
+  },
+  {
+    "image": "/images/section-products/product-7.jpg",
+    "title": "Pinky",
+    "description": "Cute bed set",
+    "price": "7.000.000",
+    "discount": 30,
+    "isNew": false
+  },
+  {
+    "image": "/images/section-products/product-8.jpg",
+    "title": "Owen",
+    "description": "Leather sofa",
+    "price": "1.200.000",
+    "discount": null,
+    "isNew": true
+  }
+]

@@ -1,7 +1,7 @@
 /* ========== [ADAPTIVE] ========== */
 $minWidth: 320;
 $maxWidth: 1920;
-$maxWidthContainer: 0;
+$maxWidthContainer: 1236;
 $containerPadding: 80;
 // trigger of the first breakpoint
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -15,9 +15,9 @@ $responsiveType: 2;
 
 /* ========== [COLORS] ========== */
 $primaryColor: #b88e2f;
-$textColor: #333333;
+$textColor: #3a3a3a;
 $burgerColor: #fff;
-$footerTitleColor: #9F9F9F;
+$footerTitleColor: #9f9f9f;
 
 /* ========== [SHADOWS] ========== */
 $shadowModal: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,

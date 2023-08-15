@@ -1,14 +1,15 @@
-@use "sass:math";
+@use 'sass:math';
 // abstracts
-@import "./abstracts/fonts";
-@import "./abstracts/variables";
+@import './abstracts/fonts';
+@import './abstracts/variables';
 
 // base
-@import "./base/common";
-@import "./base/reset";
+@import './base/common';
+@import './base/reset';
 
 // layout
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/hero";
-@import "./layout/range";
+@import './layout/header';
+@import './layout/hero';
+@import './layout/range';
+@import './layout/products';
+@import './layout/footer';
