@@ -8,18 +8,32 @@
     <nav>
       <ul class="main-nav">
         <li>
-          <a href="#" class="main-nav__item-link main-nav__item-link--current"
+          <a
+            href="./index.html"
+            class="main-nav__item-link @@if (context.homeActive) {main-nav__item-link--current}"
             >Home</a
           >
         </li>
         <li>
-          <a href="#" class="main-nav__item-link">Shop</a>
+          <a
+            href="./shop.html"
+            class="main-nav__item-link @@if (context.shopActive) {main-nav__item-link--current}"
+            >Shop</a
+          >
         </li>
         <li>
-          <a href="#" class="main-nav__item-link">About</a>
+          <a
+            href="./blog.html"
+            class="main-nav__item-link @@if (context.blogActive) {main-nav__item-link--current}"
+            >Blog</a
+          >
         </li>
         <li>
-          <a href="#" class="main-nav__item-link">Contact</a>
+          <a
+            href="./contact.html"
+            class="main-nav__item-link @@if (context.contactActive) {main-nav__item-link--current}"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
