@@ -1,0 +1,47 @@
+.shop-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 316px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    height: inherit;
+    background-image: url('/images/shop-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+    opacity: 0.5;
+  }
+
+  &__content {
+    position: relative;
+    color: #000;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  &__path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+
+    & span {
+      font-weight: 500;
+    }
+
+    & svg {
+      margin: 0 6px;
+    }
+  }
+}
