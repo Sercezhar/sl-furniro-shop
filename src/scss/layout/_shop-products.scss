@@ -1,0 +1,35 @@
+.shop-products {
+  padding: 63px 0 85px 0;
+}
+
+.shop-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 38px;
+
+  &__button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #f9f1e7;
+    border-radius: 10px;
+    transition: background-color 300ms $transitionBase;
+
+    &:hover:not(.shop-pagination__button--active) {
+      background-color: #f3e2ce;
+    }
+
+    &--next {
+      width: 98px;
+      height: 60px;
+      font-weight: 300;
+    }
+
+    &--active {
+      color: #fff;
+      background-color: $primaryColor;
+      pointer-events: none;
+    }
+  }
+}
