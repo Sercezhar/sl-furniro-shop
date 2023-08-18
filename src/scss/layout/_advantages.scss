@@ -1,0 +1,33 @@
+.advantages {
+  padding: 100px 0;
+  background-color: #faf3ea;
+
+  &__container {
+    max-width: 1334px;
+  }
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    color: #898989;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__title {
+    color: #242424;
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
