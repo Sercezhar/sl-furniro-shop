@@ -33,6 +33,16 @@
     align-items: center;
     background-color: transparent;
     font-size: 20px;
+    transition: color 300ms $transitionBase;
+
+    & svg {
+      transition: fill 300ms $transitionBase;
+    }
+
+    &:hover {
+      fill: $primaryColor;
+      color: $primaryColor;
+    }
   }
 
   &__info {
