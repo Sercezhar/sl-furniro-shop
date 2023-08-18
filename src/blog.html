@@ -3,7 +3,10 @@
   @@include('html/_head.html', { "title": "Blog" })
   <body>
     @@include('./html/_header.html', {"blogActive": true})
-    <main></main>
+    <main>
+      @@include('./html/_pages-hero.html', {"title": "Blog"})
+      @@include('./html/_blog-posts.html') @@include('./html/_advantages.html')
+    </main>
     @@include('./html/_footer.html')
   </body>
   <script src="./js/app.min.js"></script>
