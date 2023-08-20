@@ -2,14 +2,20 @@
   "name": "sl-furniro-shop",
   "version": "1.0.0",
   "main": "gulpfile.js",
+  "homepage": "https://sercezhar.github.io/sl-furniro-shop/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "sercezhar",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "del": "^6.0.0",
+    "gh-pages": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-changed": "^4.0.3",
