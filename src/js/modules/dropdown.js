@@ -1,7 +1,16 @@
-function dropdown(dropdownSelector, optionsSelector, itemSelector, itemActive) {
+export function dropdown(
+  dropdownSelector,
+  optionsSelector,
+  itemSelector,
+  itemActive
+) {
   const dropdownButton = document.querySelector(dropdownSelector);
   const options = document.querySelector(optionsSelector);
   const optionsItem = document.querySelectorAll(itemSelector);
+
+  if (!dropdownButton) {
+    return;
+  }
 
   document.addEventListener('click', handleOptionsVisibility);
   optionsItem.forEach(item => {
@@ -31,16 +40,3 @@ function dropdown(dropdownSelector, optionsSelector, itemSelector, itemActive) {
     }
   }
 }
-
-dropdown(
-  '.cp-show__input',
-  '.cp-show__list',
-  '.cp-show__item',
-  'cp-show__item--active'
-);
-dropdown(
-  '.cp-sort__input',
-  '.cp-sort__list',
-  '.cp-sort__item',
-  'cp-sort__item--active'
-);

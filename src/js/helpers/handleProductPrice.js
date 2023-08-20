@@ -1,4 +1,4 @@
-function handleProductPrice() {
+export function handleProductPrice() {
   const price = document.querySelectorAll('.prices__basic');
   const discount = document.querySelectorAll('.products-info__discount');
   const discountedPrice = document.querySelectorAll('.prices__discounted');
@@ -21,5 +21,3 @@ function handleProductPrice() {
     }
   });
 }
-
-handleProductPrice();
