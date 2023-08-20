@@ -3,7 +3,11 @@
   @@include('html/_head.html', { "title": "Contact" })
   <body>
     @@include('./html/_header.html', {"contactActive": true})
-    <main></main>
+    <main>
+      @@include('./html/_pages-hero.html', {"title": "Contact"})
+      @@include('./html/_contact-form.html')
+      @@include('./html/_advantages.html')
+    </main>
     @@include('./html/_footer.html')
   </body>
   <script src="./js/app.min.js"></script>
