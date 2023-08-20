@@ -31,7 +31,7 @@
 
   &__text {
     margin-bottom: 30px;
-    color: #9f9f9f;
+    color: $colorGray;
     font-size: 15px;
     line-height: 1.5;
   }
@@ -72,7 +72,7 @@
   &__item {
     display: flex;
     align-items: center;
-    color: #9f9f9f;
+    color: $colorGray;
   }
 
   &__icon {
@@ -98,7 +98,7 @@
     padding: 10px 50px 10px 20px;
     width: 100%;
     height: 58px;
-    border: 1px solid #9f9f9f;
+    border: 1px solid $colorGray;
     border-radius: 10px;
     outline: none;
     transition: box-shadow 300ms $transitionBase;
@@ -134,7 +134,7 @@
     display: flex;
     gap: 41px;
     flex-direction: column;
-    color: #9f9f9f;
+    color: $colorGray;
   }
 
   &__item {
@@ -174,7 +174,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #9f9f9f;
+    color: $colorGray;
     font-size: 12px;
 
     & a:hover {

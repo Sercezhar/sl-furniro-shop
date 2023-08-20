@@ -5,7 +5,7 @@
 
   &__title {
     margin-bottom: 58px;
-    color: $footerTitleColor;
+    color: $colorGray;
     font-weight: 500;
   }
 
@@ -19,7 +19,7 @@
   }
 }
 
-/* ========== [CONTENT] ========== */
+// content
 .footer-content {
   display: flex;
   padding: 48px 0;
@@ -38,7 +38,7 @@
   }
 
   &__address {
-    color: #9f9f9f;
+    color: $colorGray;
     font-style: normal;
   }
 }
@@ -95,7 +95,7 @@
     }
 
     &::placeholder {
-      color: #9f9f9f;
+      color: $colorGray;
     }
   }
 

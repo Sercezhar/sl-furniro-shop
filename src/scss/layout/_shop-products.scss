@@ -2,9 +2,10 @@
   padding: 63px 0 85px 0;
 }
 
+// cp
 .control-panel {
   padding: 22px 0;
-  background-color: #f9f1e7;
+  background-color: $bgPink;
 
   &__container {
     display: flex;
@@ -13,7 +14,7 @@
   }
 }
 
-// buttons
+// cp buttons
 .cp-buttons {
   display: flex;
   align-items: center;
@@ -52,11 +53,11 @@
   &__info {
     padding-left: 32px;
     color: #000;
-    border-left: 2px solid #9f9f9f;
+    border-left: 2px solid $colorGray;
   }
 }
 
-// dropdowns
+// cp dropdowns
 .cp-selectors {
   display: flex;
   gap: 29px;
@@ -73,7 +74,7 @@
   }
 
   &__input {
-    color: #9f9f9f;
+    color: $colorGray;
     background-color: #fff;
     outline: none;
     cursor: pointer;
@@ -103,7 +104,7 @@
     cursor: pointer;
 
     &:hover:not(.cp-show__item--active, .cp-sort__item--active) {
-      background-color: #f4f5f7;
+      background-color: $colorLightGray;
     }
 
     &--active {

@@ -24,6 +24,7 @@
   }
 }
 
+// collage
 .collage {
   position: absolute;
   top: 126px;
@@ -32,6 +33,7 @@
   display: flex;
 }
 
+// left side
 .collage-left {
   margin-right: 16px;
 
@@ -56,11 +58,13 @@
   }
 }
 
+// middle
 .collage-middle {
   display: flex;
   align-items: center;
 }
 
+// right side
 .collage-right {
   margin-left: 16px;
 

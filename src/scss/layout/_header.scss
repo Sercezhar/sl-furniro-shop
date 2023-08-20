@@ -19,17 +19,9 @@
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
   }
-
-  &.fixed {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-  }
 }
 
-/* ========== [NAVIGATION] ========== */
+// navigation
 .main-nav {
   display: flex;
   gap: 75px;
@@ -53,7 +45,7 @@
   }
 }
 
-/* ========== [BUTTONS] ========== */
+// buttons
 .header-buttons {
   display: flex;
   gap: 45px;

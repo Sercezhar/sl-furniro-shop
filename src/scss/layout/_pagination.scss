@@ -8,12 +8,12 @@
     width: 60px;
     height: 60px;
     font-size: 20px;
-    background-color: #f9f1e7;
+    background-color: $bgPink;
     border-radius: 10px;
     transition: background-color 300ms $transitionBase;
 
     &:hover:not(.pagination__button--active) {
-      background-color: #f3e2ce;
+      background-color: $hoverPink;
     }
 
     &--next {

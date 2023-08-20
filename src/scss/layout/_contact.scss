@@ -13,7 +13,7 @@
     margin: 0 auto;
     margin-bottom: 133px;
     width: 644px;
-    color: #9f9f9f;
+    color: $colorGray;
     text-align: center;
   }
 
@@ -78,7 +78,7 @@
   &__input,
   &__textarea {
     padding: 0 30px;
-    border: 1px solid #9f9f9f;
+    border: 1px solid $colorGray;
     border-radius: 10px;
     outline: none;
 
