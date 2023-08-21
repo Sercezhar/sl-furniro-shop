@@ -61,6 +61,10 @@ function server() {
   });
 }
 
+function copyFavicon() {
+  return src(`${srcFolder}/favicon.ico`).pipe(dest(buildFolder));
+}
+
 function html() {
   return src(path.src.html, { base: srcFolder })
     .pipe(changed(path.build.html, { hasChanged: changed.compareContents }))
@@ -165,10 +169,13 @@ function watcher() {
   gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, scss, js, images, fonts));
+const tasks = gulp.parallel(copyFavicon, html, scss, js, images, fonts);
+
+const build = gulp.series(clean, tasks);
 const watch = gulp.parallel(build, watcher, server);
 
 /* ========== [EXPORTS] ========== */
+exports.copyFavicon = copyFavicon;
 exports.html = html;
 exports.scss = scss;
 exports.js = js;
