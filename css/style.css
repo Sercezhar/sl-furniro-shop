@@ -1280,6 +1280,102 @@ h1,h2,h3,h4,h5,h6 {
     opacity: .8
 }
 
+.backdrop {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.6);
+    transition: 300ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5
+}
+
+.backdrop--visible {
+    opacity: 1;
+    pointer-events: all
+}
+
+.backdrop--visible .popup {
+    transform: translateY(0)
+}
+
+.popup {
+    transform: translateY(-66%);
+    width: 448px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,.07) 0px 1px 1px,rgba(0,0,0,.07) 0px 2px 2px,rgba(0,0,0,.07) 0px 4px 4px,rgba(0,0,0,.07) 0px 8px 8px,rgba(0,0,0,.07) 0px 16px 16px;
+    transition: 300ms transform cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden
+}
+
+.popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc
+}
+
+.popup-header__title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500
+}
+
+.popup-header__button {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 8px;
+    transition: 300ms background-color cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.popup-header__button:hover {
+    background-color: #f4f5f7
+}
+
+.popup-header__button:hover .popup-header__icon {
+    opacity: 1
+}
+
+.popup-header__icon {
+    opacity: .5;
+    transition: 300ms opacity cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.popup-body {
+    padding: 24px;
+    border-bottom: 1px solid #ccc
+}
+
+.popup-body__text {
+    line-height: 1.35
+}
+
+.popup-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding: 24px
+}
+
+.popup-footer__button {
+    width: 176px;
+    height: 48px;
+    color: #fff;
+    background-color: #b88e2f;
+    border-radius: 5px;
+    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.popup-footer__button:hover {
+    opacity: .8
+}
+
 .footer {
     margin-top: auto;
     color: #000;
