@@ -15,7 +15,7 @@
 
 @if ($responsiveType==1) {
   // responsive
-  [class*="__container"] {
+  [class*='__container'] {
     @if ($maxWidthContainer>0) {
       max-width: $maxWidthContainer + px;
       box-sizing: content-box;
@@ -27,27 +27,14 @@
   }
 } @else {
   // by break points
-  [class*="__container"] {
+  [class*='__container'] {
     margin: 0 auto;
     @if ($maxWidthContainer>0) {
       max-width: $maxWidthContainer + px;
       box-sizing: content-box;
-    } @else {
-      @if ($containerPadding>0) {
-        padding: 0 math.div($containerPadding, 2) + px;
-      }
     }
-    @media (max-width: $pc) {
-      max-width: 970px;
-    }
-    @media (max-width: $tablet) {
-      max-width: 750px;
-    }
-    @media (max-width: $mobile) {
-      max-width: none;
-      @if ($containerPadding>0 and $maxWidthContainer>0) {
-        padding: 0 math.div($containerPadding, 2) + px;
-      }
+    @if ($containerPadding>0) {
+      padding: 0 math.div($containerPadding, 2) + px;
     }
   }
 }
